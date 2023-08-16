@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baap er Bank</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome fonts -->
+  <script src="https://kit.fontawesome.com/b342920f8f.js" crossorigin="anonymous"></script>
+
+  <!-- custom styles -->
+  <style>
+    .fonts-lato {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .primary-color {
+      color: #F85559;
+    }
+
+    .bg-primary {
+      background-color: #F85559;
+    }
+  </style>
+</head>
+
+<body class="fonts-lato">
+
+  <header>
+    <h1 class="text-4xl text-pink-600 font-bold text-center p-10">Let's get some <span class="text-sky-500 font-extrabold">Mooooooooooney</span>!!!</h1>
+  </header>
+
+  <main>
+
+    <section class="mx-auto p-5 text-center">
+      <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto items-center">
+        <div class="bg-green-500 text-white rounded-xl py-10">
+            <h3 class="text-2xl py-3">Deposite</h3>
+            <h2 class="text-4xl">Tk. <span id="deposite-total">000</span></h2>
+        </div>
+        <div class="bg-pink-500 text-white rounded-xl py-10">
+            <h3 class="text-2xl py-3">Withdraw</h3>
+            <h2 class="text-4xl">Tk. <span id="withdraw-total">000</span></h2>
+        </div>
+        <div class="bg-violet-500 text-white rounded-xl py-10">
+            <h3 class="text-2xl py-3">Balance</h3>
+            <h2 class="text-4xl">Tk. <span id="balance-total">000</span></h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto p-5 text-center">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+            <div class="bg-fuchsia-600 rounded-xl p-8">
+                <h3 class="text-2xl py-3 text-white">Please Deposite</h3>
+                    <input id="deposite-field" class="w-full mb-5 px-4 py-2 mx-auto" type="text" id="" placeholder="Amount your Deposite"> 
+                    <button id="btn-deposit" class="bg-rose-700 text-white px-8 py-2 block font-medium rounded-md mx-auto  hover:bg-emerald-50 hover:text-rose-600 hover:font-bold">Deposite</button>
+                  
+            </div>
+            <div class="bg-orange-500 rounded-xl p-8">
+                <h3 class="text-2xl py-3 text-white">Please Withdraw</h3>
+                    <input id="withdraw-field" class="w-full mb-5 px-4 py-2 mx-auto" type="text" id="" placeholder="Amount your Withdraw"> 
+                    <button id="btn-withdraw" class="bg-violet-700 text-white px-8 py-2 block font-medium rounded-md mx-auto  hover:bg-emerald-50 hover:text-fuchsia-600 hover:font-bold">Withdraw</button>
+            </div>
+        </div>
+    </section>
+  </main>
+  
+
+
+  <script src="js/deposite.js"></script>
+  <script src="js/withdraw.js"></script>
+  <!-- <script src="js/tailwind.config.js"></script> -->
+</body>
+
+</html>

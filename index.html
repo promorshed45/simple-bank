@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baap er Bank</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome fonts -->
+  <script src="https://kit.fontawesome.com/b342920f8f.js" crossorigin="anonymous"></script>
+
+  <!-- custom styles -->
+  <style>
+    .fonts-lato {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .primary-color {
+      color: #F85559;
+    }
+
+    .bg-primary {
+      background-color: #F85559;
+    }
+  </style>
+</head>
+
+<body class="fonts-lato">
+
+  <header>
+    <h1 class="text-4xl text-violet-800 font-bold text-center p-10">Welcome to your <span class="text-orange-600 font-extrabold">Baap er Bank</span>!!!</h1>
+  </header>
+
+  <main>
+
+    <section class="bg-orange-100 w-9/12 lg:w-6/12 mx-auto p-5">
+      <h3 class="text-3xl font-semibold text-center ">Please Login</h3>
+      <div class="py-5 px-5">
+        <input id="user-email" class="w-full mb-5 px-4 py-2 mx-auto" type="email" id="" placeholder="Your email"> 
+        <input id="user-password" class="w-full mb-5 px-4 py-2 mx-auto" type="password" id="" placeholder="Your password">
+
+        <button id="btn-submit" class="bg-emerald-600 text-white px-8 py-2 block font-medium rounded-md mx-auto  hover:bg-emerald-50 hover:text-emerald-600 hover:font-bold">Submit</button>
+      </div>
+    </section>
+
+  </main>
+  
+
+
+  <script src="js/login.js"></script>
+  <!-- <script src="js/tailwind.config.js"></script> -->
+</body>
+
+</html>
