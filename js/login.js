@@ -16,7 +16,7 @@ console.log(email,password);
 
 // DO NOT email password on the client side
 // Step-04 : verify email and password and check whether valid usr or invalid user
-if(email === 'ctgmorshed45@gmail.com' && password === 'jinat'){
+if(email === 'ctgmorshed45@gmail.com' && password === '363745'){
     window.location.href = 'bank.html';
 }
 else{
